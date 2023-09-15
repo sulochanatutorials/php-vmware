@@ -228,7 +228,7 @@ trait SoapImportApis
                 if (!is_array($value)) {
                     $object->$key = $value;
                 } else if (is_array($value) && array_key_exists('@attributes', $value)) {
-                    $className = "Xelon\\VmWareClient\\Types\\" . $value['@attributes']['type'];
+                    $className = "VmWare\\VmWareClient\\Types\\" . $value['@attributes']['type'];
                     $newObj = (new $className);
                     unset($value['@attributes']);
 
@@ -245,7 +245,7 @@ trait SoapImportApis
             if (!is_array($value)) {
                 $arrayToBuild[$key] = $value;
             } else if (is_array($value) && array_key_exists('@attributes', $value)) {
-                $className = "Xelon\\VmWareClient\\Types\\" . $value['@attributes']['type'];
+                $className = "VmWare\\VmWareClient\\Types\\" . $value['@attributes']['type'];
                 $newObj = (new $className);
                 unset($value['@attributes']);
 

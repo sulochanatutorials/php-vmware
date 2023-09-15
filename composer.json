@@ -32,13 +32,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Xelon\\VmWareClient\\": "src",
-      "Xelon\\VmWareClient\\Database\\Factories\\": "database/factories"
+      "VmWare\\VmWareClient\\": "src",
+      "VmWare\\VmWareClient\\Database\\Factories\\": "database/factories"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Xelon\\VmWareClient\\Tests\\": "tests"
+      "VmWare\\VmWareClient\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -57,10 +57,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Xelon\\VmWareClient\\VmWareClientServiceProvider"
+        "VmWare\\VmWareClient\\VmWareClientServiceProvider"
       ],
       "aliases": {
-        "VmWareClient": "Xelon\\VmWareClient\\Facades\\VmWareClient"
+        "VmWareClient": "VmWare\\VmWareClient\\Facades\\VmWareClient"
       }
     }
   },

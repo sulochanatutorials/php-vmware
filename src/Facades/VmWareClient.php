@@ -5,7 +5,7 @@ namespace VmWare\VmWareClient\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Xelon\VmWareClient\VmWareClientInit
+ * @see \VmWare\VmWareClient\VmWareClientInit
  */
 class VmWareClient extends Facade
 {
